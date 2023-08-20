@@ -3,8 +3,8 @@ import { paginationHelpers } from '../../../helpers/paginationHelper';
 import { IGenericResponse } from '../../../interfaces/common';
 import { IPaginationOptions } from '../../../interfaces/pagination';
 import prisma from '../../../shared/prisma';
-import { IAcademicSemesterFilterRequest } from './academicSemester.interface';
 import { AcademicSemesterSearchAbleFields } from './academicSemester.constants';
+import { IAcademicSemesterFilterRequest } from './academicSemester.interface';
 
 const insertIntoDB = async (
   academicSemesterData: AcademicSemester
@@ -85,8 +85,34 @@ const getDataById = async (id: string): Promise<AcademicSemester | null> => {
   return result;
 };
 
+const updateIntoDB = async (
+  id: string,
+  payload: Partial<AcademicSemester>
+): Promise<AcademicSemester> => {
+  const result = await prisma.academicSemester.update({
+    where: {
+      id,
+    },
+    data: payload,
+  });
+
+  return result;
+};
+
+const deleteFromDB = async (id: string): Promise<AcademicSemester> => {
+  const result = await prisma.academicSemester.delete({
+    where: {
+      id,
+    },
+  });
+
+  return result;
+};
+
 export const AcademicSemesterService = {
   insertIntoDB,
   getAllFromDB,
   getDataById,
+  updateIntoDB,
+  deleteFromDB,
 };

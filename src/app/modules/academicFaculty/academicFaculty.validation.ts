@@ -8,4 +8,10 @@ const create = z.object({
   }),
 });
 
-export const AcademicFacultyValidation = { create };
+const update = z.object({
+  body: z.object({
+    title: z.string(),
+  }),
+});
+
+export const AcademicFacultyValidation = { create, update };
