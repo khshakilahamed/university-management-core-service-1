@@ -1,4 +1,4 @@
-import { OfferedCourse } from '@prisma/client';
+import { OfferedCourse, Prisma } from '@prisma/client';
 import { paginationHelpers } from '../../../helpers/paginationHelper';
 import { IGenericResponse } from '../../../interfaces/common';
 import { IPaginationOptions } from '../../../interfaces/pagination';
@@ -91,7 +91,7 @@ const getAllFromDB = async (
     });
   }
 
-  const whereConditions =
+  const whereConditions: Prisma.OfferedCourseWhereInput =
     andConditions.length > 0 ? { AND: andConditions } : {};
 
   const result = await prisma.offeredCourse.findMany({
