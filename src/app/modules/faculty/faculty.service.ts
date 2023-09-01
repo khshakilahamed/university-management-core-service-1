@@ -18,6 +18,7 @@ const insertIntoDB = async (data: Faculty): Promise<Faculty> => {
       academicDepartment: true,
     },
   });
+
   return result;
 };
 

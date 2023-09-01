@@ -8,6 +8,7 @@ import { FacultyService } from './faculty.service';
 
 const insertIntoDB = catchAsync(async (req: Request, res: Response) => {
   const result = await FacultyService.insertIntoDB(req.body);
+
   sendResponse(res, {
     statusCode: httpStatus.OK,
     success: true,
