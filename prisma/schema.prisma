@@ -83,6 +83,7 @@ model Student {
   studentEnrolledCourses             StudentEnrolledCourse[]
   studenEnrolledCourseMarks          StudentEnrolledCourseMark[]
   studentSemesterPayments            StudentSemesterPayment[]
+  studentAcademicInfos               StudentAcademicInfo[]
 
   @@map("students")
 }
@@ -194,12 +195,6 @@ model SemesterRegistration {
   @@map("semester_registrations")
 }
 
-enum SemesterRegistrationStatus {
-  UPCOMING
-  ONGOING
-  ENDED
-}
-
 model OfferedCourse {
   id        String   @id @default(uuid())
   createdAt DateTime @default(now())
@@ -261,16 +256,6 @@ model OfferedCourseClassSchedule {
   @@map("offered_course_class_schedules")
 }
 
-enum WeekDays {
-  SATURDAY
-  SUNDAY
-  MONDAY
-  TUESDAY
-  WEDNESDAY
-  THURSDAY
-  FRIDAY
-}
-
 model StudentSemesterRegistration {
   id                String   @id @default(uuid())
   isConfirmed       Boolean? @default(false)
@@ -330,12 +315,6 @@ model StudentEnrolledCourse {
   @@map("student_enrolled_courses")
 }
 
-enum StudentEnrolledCourseStatus {
-  ONGOING
-  COMPLETED
-  WITHDRAWN
-}
-
 model StudentEnrolledCourseMark {
   id        String   @id @default(uuid())
   createdAt DateTime @default(now())
@@ -357,11 +336,6 @@ model StudentEnrolledCourseMark {
   @@map("student_enrolled_course_marks")
 }
 
-enum ExamType {
-  MIDTERM
-  FINAL
-}
-
 model StudentSemesterPayment {
   id        String   @id @default(uuid())
   createdAt DateTime @default(now())
@@ -381,6 +355,47 @@ model StudentSemesterPayment {
   paymentStatus   PaymentStatus? @default(PENDING)
 
   @@map("student_semester_payments")
+}
+
+model StudentAcademicInfo {
+  id        String   @id @default(uuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  studentId String
+  student   Student @relation(fields: [studentId], references: [id])
+
+  totalCompletedCredit Int?   @default(0)
+  cgpa                 Float? @default(0)
+
+  @@map("student_academic_infos")
+}
+
+enum SemesterRegistrationStatus {
+  UPCOMING
+  ONGOING
+  ENDED
+}
+
+enum WeekDays {
+  SATURDAY
+  SUNDAY
+  MONDAY
+  TUESDAY
+  WEDNESDAY
+  THURSDAY
+  FRIDAY
+}
+
+enum StudentEnrolledCourseStatus {
+  ONGOING
+  COMPLETED
+  WITHDRAWN
+}
+
+enum ExamType {
+  MIDTERM
+  FINAL
 }
 
 enum PaymentStatus {
