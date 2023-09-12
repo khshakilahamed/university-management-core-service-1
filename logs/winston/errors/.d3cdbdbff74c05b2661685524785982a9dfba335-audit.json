@@ -6,16 +6,6 @@
     "auditLog": "D:\\Level-2\\projects\\university-management-core-service-1\\logs\\winston\\errors\\.d3cdbdbff74c05b2661685524785982a9dfba335-audit.json",
     "files": [
         {
-            "date": 1693334754143,
-            "name": "D:\\Level-2\\projects\\university-management-core-service-1\\logs\\winston\\errors\\phu-2023-30-08-00-error.log",
-            "hash": "8dd0719a1adf6fa8c5d5f9b6abe58371ad96a01d0ba3a0b5959995e8b853e072"
-        },
-        {
-            "date": 1693336092697,
-            "name": "D:\\Level-2\\projects\\university-management-core-service-1\\logs\\winston\\errors\\phu-2023-30-08-01-error.log",
-            "hash": "c441993831209a7c21871a19a360d3e6e6e5ea4e2bda71c66c8bf92c1cf102e8"
-        },
-        {
             "date": 1693370617223,
             "name": "D:\\Level-2\\projects\\university-management-core-service-1\\logs\\winston\\errors\\phu-2023-30-08-10-error.log",
             "hash": "8ce71b7a85728c4296e3b5a5bd5a868f1cbcc9ebc73926e9fd0b8d02e5585ecb"
@@ -224,6 +214,21 @@
             "date": 1694372443969,
             "name": "D:\\Level-2\\projects\\university-management-core-service-1\\logs\\winston\\errors\\phu-2023-11-09-01-error.log",
             "hash": "d20ccd659d680b7b409e10d39154260749cdeb37f061dc36c9b5a35c2e591cad"
+        },
+        {
+            "date": 1694544616811,
+            "name": "D:\\Level-2\\projects\\university-management-core-service-1\\logs\\winston\\errors\\phu-2023-13-09-00-error.log",
+            "hash": "e258459bd3887d99df28309ae3a1d1dcc9c4e41f2c6af7b862298d89fc7229ad"
+        },
+        {
+            "date": 1694545251558,
+            "name": "D:\\Level-2\\projects\\university-management-core-service-1\\logs\\winston\\errors\\phu-2023-13-09-01-error.log",
+            "hash": "8adca0eb2c55bd1bdc5b06cccd6c51e80a2f04ac27e79b03729874eef6801d97"
+        },
+        {
+            "date": 1694549011861,
+            "name": "D:\\Level-2\\projects\\university-management-core-service-1\\logs\\winston\\errors\\phu-2023-13-09-02-error.log",
+            "hash": "cd720abc9c37fb85fc43eda53a184e4acf2b5b52067fd088526a47772f718dda"
         }
     ],
     "hashType": "sha256"
