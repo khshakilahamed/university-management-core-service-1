@@ -268,7 +268,7 @@ const myAcademicInfo = async (authUserId: string): Promise<any> => {
     },
   });
 
-  console.log(enrolledCourses);
+  // console.log(enrolledCourses);
 
   const groupByAcademicSemesterData =
     StudentUtils.groupByAcademicSemester(enrolledCourses);
