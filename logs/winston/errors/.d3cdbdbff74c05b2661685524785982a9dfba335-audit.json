@@ -6,21 +6,6 @@
     "auditLog": "D:\\Level-2\\projects\\university-management-core-service-1\\logs\\winston\\errors\\.d3cdbdbff74c05b2661685524785982a9dfba335-audit.json",
     "files": [
         {
-            "date": 1693370617223,
-            "name": "D:\\Level-2\\projects\\university-management-core-service-1\\logs\\winston\\errors\\phu-2023-30-08-10-error.log",
-            "hash": "8ce71b7a85728c4296e3b5a5bd5a868f1cbcc9ebc73926e9fd0b8d02e5585ecb"
-        },
-        {
-            "date": 1693372038653,
-            "name": "D:\\Level-2\\projects\\university-management-core-service-1\\logs\\winston\\errors\\phu-2023-30-08-11-error.log",
-            "hash": "512cb8c6183a1abe6cf8bf6559300b0330f116bf0b7a0815453020cec49118b1"
-        },
-        {
-            "date": 1693377756499,
-            "name": "D:\\Level-2\\projects\\university-management-core-service-1\\logs\\winston\\errors\\phu-2023-30-08-12-error.log",
-            "hash": "33089efc25f5c3c6c3d9d0e6f1e539bdb377fbc32b96bcc0b3c1459340f10f28"
-        },
-        {
             "date": 1693422167372,
             "name": "D:\\Level-2\\projects\\university-management-core-service-1\\logs\\winston\\errors\\phu-2023-31-08-01-error.log",
             "hash": "4d239fcf60cb2e8a9edd7b7f32b5293122c42371ef0921348ae22e88c7533fed"
@@ -229,6 +214,16 @@
             "date": 1694549011861,
             "name": "D:\\Level-2\\projects\\university-management-core-service-1\\logs\\winston\\errors\\phu-2023-13-09-02-error.log",
             "hash": "cd720abc9c37fb85fc43eda53a184e4acf2b5b52067fd088526a47772f718dda"
+        },
+        {
+            "date": 1694602863658,
+            "name": "D:\\Level-2\\projects\\university-management-core-service-1\\logs\\winston\\errors\\phu-2023-13-09-17-error.log",
+            "hash": "2e9acabaaf462e09d3de11857eda9c95bf7fb7542fe50d1ecbdd3f3d8589bedf"
+        },
+        {
+            "date": 1694610774667,
+            "name": "D:\\Level-2\\projects\\university-management-core-service-1\\logs\\winston\\errors\\phu-2023-13-09-19-error.log",
+            "hash": "6b36524047797adcb1b8024b5dc276a2dad182cda88d8b4705b2283fcdc8bad2"
         }
     ],
     "hashType": "sha256"
