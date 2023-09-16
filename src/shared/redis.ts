@@ -13,8 +13,8 @@ const redisSubClient = createClient({
   url: config.redis.url,
 });
 
-redisClient.on('error', err => console.log('RedisError', err));
-redisClient.on('connect', () => console.log('Redis Connected'));
+// redisClient.on('error', err => console.log('RedisError', err));
+// redisClient.on('connect', () => console.log('Redis Connected'));
 
 const connect = async (): Promise<void> => {
   await redisClient.connect();
