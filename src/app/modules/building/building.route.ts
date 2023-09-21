@@ -25,10 +25,10 @@ router.patch(
   BuildingController.updateIntoDB
 );
 
-// router.delete(
-//   '/:id',
-//   auth(ENUM_USER_ROLE.SUPER_ADMIN, ENUM_USER_ROLE.ADMIN),
-//   BuildingController.deleteFromDB
-// );
+router.delete(
+  '/:id',
+  auth(ENUM_USER_ROLE.SUPER_ADMIN, ENUM_USER_ROLE.ADMIN),
+  BuildingController.deleteFromDB
+);
 
 export const buildingRoutes = router;
