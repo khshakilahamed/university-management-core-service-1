@@ -21,6 +21,7 @@ import {
 const insertIntoDB = async (
   payload: IOfferedCourseSectionCreate
 ): Promise<OfferedCourseSection | null> => {
+  console.log(payload);
   const { classSchedules, ...data } = payload;
 
   const isExistOfferedCourse = await prisma.offeredCourse.findFirst({
